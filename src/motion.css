@@ -1,0 +1,21 @@
+:root{--motion-ease:cubic-bezier(.22,1,.36,1)}
+@keyframes enter-page{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes enter-dialog{from{opacity:0;transform:translateY(18px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes fade-in{from{opacity:0}to{opacity:1}}
+@keyframes fade-out{to{opacity:0}}
+.page-enter{animation:enter-page .38s var(--motion-ease) both}
+.overlay{animation:fade-in .2s ease both}
+.modal{animation:enter-dialog .32s var(--motion-ease) both}
+.feedback,.celebrate{animation:enter-page .28s var(--motion-ease) both}
+.module,.instrumentcard,.answer,.tabs button,.sidebar nav button,.drumpads button,.whitekey,.blackkey{transition:background-color .2s ease,border-color .2s ease,color .2s ease,box-shadow .25s ease,transform .25s var(--motion-ease)}
+@media(hover:hover){.instrumentcard:hover{transform:translateY(-4px);box-shadow:0 8px 22px #243d3210}.module:not(.locked):hover{box-shadow:0 5px 20px #243d3209}.answer:not(:disabled):hover{border-color:#87aa90;transform:translateY(-2px)}}
+.button:active:not(:disabled){transform:scale(.97)}
+.drumpads button:active{transform:scale(.93);box-shadow:0 0 0 6px #dbcfe950}
+.whitekey:active,.whitekey.active{transform:translateY(2px)}
+.blackkey:active{transform:translateY(2px)}
+.beats span{transition:background-color .09s ease,transform .09s ease}.beats .lit{transform:scale(1.1)}
+.progress span{transition:width .45s var(--motion-ease)}
+::view-transition-old(root){animation:fade-out .12s ease both}
+::view-transition-new(root){animation:fade-in .24s ease both}
+footer a{display:block;margin-top:6px;text-decoration:underline;text-underline-offset:3px}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}::view-transition-old(root),::view-transition-new(root){animation:none!important}}
