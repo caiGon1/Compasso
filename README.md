@@ -2,6 +2,10 @@
 
 Aplicação React baseada nos 19 requisitos funcionais do PDF e do JSON fornecidos. Interface em português, adaptada a computadores e celulares.
 
+## Levantamento de requisitos
+
+Consulte o [documento de levantamento de requisitos](https://docs.google.com/document/d/1-IKmgAONLb5qjMNZ2_39N0X5po1dSi6Qon2HYa0yiZg/edit?usp=sharing) do projeto.
+
 ## Executar
 
 Requer Node.js 24 ou superior.
@@ -111,12 +115,3 @@ O teste cria uma conta temporária e a remove em `finally`, junto com suas sess�
 ### Limites da verificação
 
 Os testes de interface usam JSDOM. Os testes de reprodução simulam Web Audio para verificar agendamento e recursos, e validam as amostras MP3 incorporadas; a qualidade percebida dos timbres precisa de escuta humana. Aparência, responsividade em navegadores reais, usabilidade por faixa etária e auditoria completa de acessibilidade continuam exigindo verificação manual. Os testes do handler Vercel e do adaptador SQL usam substitutos controlados; o teste opcional de Postgres verifica o banco externo quando configurado.
-
-## Escopo e limites
-
-Esta é uma primeira versão funcional do produto, com conteúdo introdutório. O modelo conceitual dos documentos foi adaptado: conteúdo editorial é versionado em código, e usuários/sessões/progresso ficam no banco. Assinaturas não foram implementadas porque aparecem apenas no modelo de exemplo, sem requisito funcional de cobrança. Não foram importados nomes, matrículas, contas, vídeos de exemplo ou supostas assinaturas dos documentos.
-
-O treino livre não concede XP; os pontos vêm das aulas avaliadas. Piano acústico, guitarra elétrica limpa e bateria usam amostras instrumentais FluidR3, incorporadas ao projeto. Somente o clique do metrônomo é sintetizado. As transições usam View Transitions com alternativa CSS e respeitam a preferência por movimento reduzido. As atividades instrumentais orientam a prática, sem análise automática de microfone ou MIDI. Fontes Google têm fallback local. A aplicação não inclui recuperação de senha por e-mail, verificação de e-mail, administração de conteúdo, cobrança ou proteção avançada contra abuso. Esses itens devem ser planejados antes de abrir um serviço público amplo.
-
-Testes automatizados cobrem as regras centrais; não substituem testes de usabilidade com pessoas de diferentes idades nem uma auditoria completa de acessibilidade.
-
