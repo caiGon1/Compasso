@@ -1,0 +1,9 @@
+node_modules
+.local
+.git
+.env*
+dist
+tests
+coverage
+work
+*.zip

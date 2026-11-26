@@ -1,4 +1,4 @@
-import {test} from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import {sampleKey} from '../src/audio.js';
+import {test} from 'vitest';import assert from 'node:assert/strict';import fs from 'node:fs';import {sampleKey} from '../src/audio.js';
 test('Todas as notas do teclado, acordes, treino e solo têm amostras MP3 próprias',()=>{
  const banks=JSON.parse(fs.readFileSync(new URL('../src/samples.json',import.meta.url),'utf8'));
  const piano=[130.81,261.63,277.18,293.66,311.13,329.63,349.23,369.99,392,415.30,440,466.16,493.88,523.25];

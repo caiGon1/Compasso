@@ -1,0 +1,47 @@
+:root { color-scheme: light; }
+.theme-toggle { width:38px;height:38px;border:1px solid var(--border);background:transparent;border-radius:50%;display:grid;place-items:center;color:var(--green);transition:background .2s,color .2s,transform .2s;flex-shrink:0; }
+.theme-toggle:hover {background:#eaf3ee;transform:rotate(-8deg)}
+:root[data-theme="dark"] {color-scheme:dark;background:#101a17;color:#e4eee7;--green:#86c7a0;--muted:#adbbb2;--border:#31443a;}
+[data-theme="dark"] .app{background:#101a17;color:#e4eee7}
+[data-theme="dark"] .sidebar,[data-theme="dark"] .topbar{background:#14211b}
+[data-theme="dark"] .card,[data-theme="dark"] .module,[data-theme="dark"] .modal{background:#19281f;color:#e4eee7}
+[data-theme="dark"] p,[data-theme="dark"] .module p,[data-theme="dark"] .topbar,[data-theme="dark"] .profilebutton small,[data-theme="dark"] .stats small{color:#adbbb2}
+[data-theme="dark"] .topbar strong,[data-theme="dark"] .stats>span,[data-theme="dark"] label,[data-theme="dark"] .cardtitle h3,[data-theme="dark"] .tip strong,[data-theme="dark"] .instrumentcard h3,[data-theme="dark"] .spread strong{color:#d2e4d7}
+[data-theme="dark"] .sidebar nav button{color:#afc1b5}
+[data-theme="dark"] .sidebar nav button.active,[data-theme="dark"] .avatar,[data-theme="dark"] .levelpill,[data-theme="dark"] .lessonlinks button,[data-theme="dark"] .status,[data-theme="dark"] .close{background:#263f30;color:#b5debf;border-color:#3b5645}
+[data-theme="dark"] .theme-toggle{color:#b5debf}
+[data-theme="dark"] .theme-toggle:hover{background:#263f30}
+[data-theme="dark"] .hero{background:#235940}
+[data-theme="dark"] .hero h2{color:#f0f7ed}
+[data-theme="dark"] .hero p{color:#d1e5d5}
+[data-theme="dark"] .hero .button.light{background:#ecf4e9;color:#245336}
+[data-theme="dark"] .button{background:#a5d3ad;color:#142d1c}
+[data-theme="dark"] .button:hover:not(:disabled){background:#b9e3be}
+[data-theme="dark"] .button.secondary,[data-theme="dark"] .tabs button,[data-theme="dark"] .answer{background:#1c3024;color:#d9e9dc;border-color:#405a46}
+[data-theme="dark"] .button.secondary:hover,[data-theme="dark"] .tabs button.active{background:#30553a;color:#eaf5e9}
+[data-theme="dark"] .textbutton{color:#a1d6ad}
+[data-theme="dark"] .green{background:#25432f;color:#a6d8ae}
+[data-theme="dark"] .purple{background:#332d49;color:#c8b4e9}
+[data-theme="dark"] .blue{background:#203d4f;color:#a0c9e7}
+[data-theme="dark"] .orange{background:#483a28;color:#e2c18f}
+[data-theme="dark"] .pink{background:#442d3c;color:#dfabc9}
+[data-theme="dark"] .locked{background:#15231b}
+[data-theme="dark"] .locked h3{color:#a3b3a8}
+[data-theme="dark"] .module:first-child{border-color:#517b5a}
+[data-theme="dark"] .challenge,[data-theme="dark"] .soundbox,[data-theme="dark"] .metro,[data-theme="dark"] .earcircle,[data-theme="dark"] .tablature,[data-theme="dark"] .staff{background:#223627;color:#c8e0ca;border-color:#37513b}
+[data-theme="dark"] .ring{background:conic-gradient(#8dbd88 var(--progress),#2c4232 0)}
+[data-theme="dark"] .ring>div{background:#19281f}
+[data-theme="dark"] input:not([type=range]),[data-theme="dark"] select{background:#122019;color:#e1eee2;border-color:#45614d}
+[data-theme="dark"] input:disabled{background:#25372c;color:#a4b5aa}
+[data-theme="dark"] .answer span,[data-theme="dark"] .beats span{background:#314b37;color:#cce2ce}
+[data-theme="dark"] .answer.selected,[data-theme="dark"] .answer.correct,[data-theme="dark"] .feedback.good,[data-theme="dark"] .medal.won{background:#294a30;border-color:#8bc190;color:#e0f0df}
+[data-theme="dark"] .feedback{background:#4a3822;color:#f0dbb4}
+[data-theme="dark"] .error{background:#4c2929;color:#ffc9bc}
+[data-theme="dark"] .beats .lit{background:#9acb9e;color:#122918}
+[data-theme="dark"] .drumpads button{background:#3b304b;border-color:#7b6498;color:#decbed}
+[data-theme="dark"] .drumpads button:active{background:#705988}
+[data-theme="dark"] .whitekey{color:#344d3a}
+[data-theme="dark"] .eyebrow,[data-theme="dark"] .navlabel,[data-theme="dark"] footer,[data-theme="dark"] .muted,[data-theme="dark"] .moduletop{color:#a2b4a7}
+[data-theme="dark"] .navdot{background:#a9d9b0}
+[data-theme="dark"] .junior{--green:#9dcc9d}
+@media(max-width:650px){.stats{gap:10px}.theme-toggle{width:34px;height:34px}.topbar>span{max-width:118px}}

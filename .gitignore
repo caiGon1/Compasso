@@ -1,4 +1,11 @@
 node_modules/
+coverage/
 dist/
 .local/
 *.zip
+.vercel/
+.env*
+!.env.example
+
+.vercel
+.env*.local
